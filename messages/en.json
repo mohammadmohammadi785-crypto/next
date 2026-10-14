@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "logo": "Next.js",
+    "language": "Language",
+    "theme": "Theme",
+    "login": "Login",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "logo": "Next.js",
+    "language": "زبان",
+    "theme": "پوسته",
+    "login": "ورود",
+    "dark": "تاریک",
+    "light": "روشن",
+    "system": "سیستم"
+  }
+}
