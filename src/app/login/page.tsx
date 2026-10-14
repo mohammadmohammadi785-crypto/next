@@ -21,7 +21,6 @@ export default function page() {
         <CardContent>
           <form action="" className=" flex flex-col gap-4">
             <div>
-              <label htmlFor=""></label>
               <Input type="email" placeholder="Enter your Email" />
             </div>
             <Input type="password" placeholder="Enter your Password" />
