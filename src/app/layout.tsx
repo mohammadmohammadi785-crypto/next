@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/Navbar";
-import I18nProvider from "@/components/I18nProvider";
+import Navbar from "@/src/components/Navbar";
+import I18nProvider from "../components/I18nProvider";
+import { ThemeProvider } from "next-themes";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
@@ -35,10 +37,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       )}
     >
       <body className="min-h-full flex flex-col">
-        <I18nProvider>
-          <Navbar />
-          {children}
-        </I18nProvider>
+        <ThemeProvider enableSystem defaultTheme="light" attribute="class">
+          <I18nProvider>
+            <Navbar />
+            {children}
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

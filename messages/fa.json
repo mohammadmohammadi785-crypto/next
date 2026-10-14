@@ -1,9 +1,8 @@
 {
   "navbar": {
-    "logo": "Next.js",
+    "logo": "لیسه استاد شریفی",
     "language": "زبان",
-    "theme": "پوسته",
-    "login": "ورود",
+    "login": "ورود کاربر",
     "dark": "تاریک",
     "light": "روشن",
     "system": "سیستم"

@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { Languages, LanguagesIcon } from "lucide-react";
 
 export default function Navbar() {
   const { t, i18n } = useTranslation("navbar");
@@ -23,7 +24,7 @@ export default function Navbar() {
         <ThemeSwitcher />
         <DropdownMenu>
           <DropdownMenuTrigger className="rounded-md border px-4 py-2 text-sm">
-            {t("language")}
+            <LanguagesIcon size={18} />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem onClick={() => void i18n.changeLanguage("en")}>
