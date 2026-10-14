@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   DropdownMenu,
@@ -13,7 +14,12 @@ import { useTheme } from "next-themes";
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
+  const [mount, setMount] = useState(false);
   const { t } = useTranslation("navbar");
+  useEffect(() => {
+    setMount(true);
+  }, []);
+  if (!mount) return null;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="rounded-md border px-4 py-2 text-sm">

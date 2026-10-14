@@ -3,8 +3,14 @@
     "logo": "Sharifi high school",
     "language": "Language",
     "login": "Login",
+    "english": "English",
+    "persian": "Persian",
     "dark": "Dark",
     "light": "Light",
+    "title": "Next.js training course at Sharifi High School Educational Center",
     "system": "System"
+  },
+  "home": {
+    "title": "Next.js training course at Sharifi High School"
   }
 }
