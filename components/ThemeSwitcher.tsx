@@ -15,7 +15,7 @@ import { useTheme } from "next-themes";
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
   const [mount, setMount] = useState(false);
-  const { t } = useTranslation("navbar");
+  const { t } = useTranslation("en.navbar");
   useEffect(() => {
     setMount(true);
   }, []);
