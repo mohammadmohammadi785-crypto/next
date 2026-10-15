@@ -4,8 +4,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/src/components/ui/card";
-import { Input } from "@/src/components/ui/input";
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import React from "react";
 
 export default function page() {
