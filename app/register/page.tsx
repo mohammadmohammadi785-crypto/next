@@ -1,4 +1,5 @@
 "use client";
+import JalaliDatePicker from "@/components/JalaliDatePicker";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,12 +11,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function page() {
   const [activeTab, setActiveTab] = useState("userInfo");
-
+  const [dob, setDob] = useState();
   return (
     <div className="w-full min-h-screen flex justify-center items-center">
       <Tabs
@@ -86,8 +86,8 @@ export default function page() {
                 </div>
 
                 <div className="grid gap-2">
-                  <Label htmlFor="password">password</Label>
-                  <Input type="text" name="password" id="password" />
+                  <Label htmlFor="DateOfBirth">Date Of Birth</Label>
+                  <JalaliDatePicker dob={dob} setDob={setDob} />
                 </div>
               </form>
             </CardContent>
