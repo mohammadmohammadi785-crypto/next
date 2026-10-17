@@ -12,6 +12,7 @@ import {
 import ThemeSwitcher from "./ThemeSwitcher";
 import { Languages, LanguagesIcon } from "lucide-react";
 import LanguageSwitcher from "./language-switcher";
+import Link from "next/link";
 
 export default function Navbar() {
   const { t } = useTranslation("navbar");
@@ -24,7 +25,9 @@ export default function Navbar() {
       <div className="flex items-center gap-2">
         <ThemeSwitcher />
         <LanguageSwitcher />
-        <Button variant="outline">{t("login")}</Button>
+        <Link href="/login" className="border rounded-md py-1 px-3">
+          {t("login")}
+        </Link>
       </div>
     </div>
   );
